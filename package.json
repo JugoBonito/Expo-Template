@@ -6,9 +6,10 @@
   "repository": "git@github.com:expo-starter/expo-template.git",
   "license": "Apache-2.0",
   "scripts": {
-    "dev": "expo start --dev-client --clear",
+    "dev": "expo start --clear",
     "dev:web": "expo start -c --web",
     "dev:android": "expo start -c --android",
+    "dev:ios": "expo start -c --ios",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start -c --web",
@@ -68,6 +69,7 @@
     "sql.js": "^1.10.3",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
+    "twrnc": "^4.3.0",
     "zod": "^3.23.6",
     "zustand": "^4.5.2"
   },
@@ -76,10 +78,11 @@
     "@babel/runtime": "^7.24.4",
     "@types/react": "18.2.0",
     "@types/sql.js": "^1.4.9",
-    "drizzle-kit": "^0.21.2",
+    "drizzle-kit": "^0.22.7",
     "tailwindcss": "3.4.1",
     "typescript": "^5.4.5"
   },
+  "resolutions": { "@types/react": "18.2.0" },
   "trustedDependencies": [
     "tailwindcss",
     "nativewind"
